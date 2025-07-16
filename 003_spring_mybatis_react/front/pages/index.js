@@ -16,7 +16,7 @@ const Index = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:8080/api/member/login', form);
+            const res = await axios.post('/api/member/login', form);
             console.log('✅ 로그인 응답:', res.data);
 
             setMessage(res.data.message || '✅ 로그인 성공!');
@@ -33,7 +33,7 @@ const Index = () => {
 
     const fetchMyInfo = async () => {
         try {
-            const res = await axios.get('http://localhost:8080/api/member/me');
+            const res = await axios.get('/api/member/me');
             setInfo(res.data);
         } catch (err) {
             console.error('❌ 사용자 정보 조회 실패:', err);
