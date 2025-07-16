@@ -67,7 +67,7 @@ CREATE TABLE `member` (
   `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK_gc3jmn7c2abyo3wf6syln5t2i` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,6 +76,7 @@ CREATE TABLE `member` (
 
 LOCK TABLES `member` WRITE;
 /*!40000 ALTER TABLE `member` DISABLE KEYS */;
+INSERT INTO `member` VALUES (89,'aaaa','$2a$10$zdLLl5hgG7fSvKDcHDjlROgqq35xjqtvUO.Y0ZZSwWDQf2yGHz0vW',NULL,'MEMBER','2025-07-16 08:49:50.939555','aaaa','aaaa',NULL,'/images/thejoa.png');
 /*!40000 ALTER TABLE `member` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,4 +175,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-16  7:29:14
+-- Dump completed on 2025-07-16 14:43:56
